@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Top 5 Musique</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; padding: 50px; }
+        .container { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 400px; }
+        h1 { text-align: center; color: #333; }
+        
+        /* Style pour chaque artiste */
+        .artiste { margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        
+        /* Le nom de l'artiste (cliquable) */
+        summary { font-weight: bold; cursor: pointer; color: #007bff; list-style: none; outline: none; }
+        summary:hover { color: #0056b3; }
+
+        /* La description qui se cache/s'affiche */
+        .description { margin-top: 10px; font-size: 0.9em; color: #555; line-height: 1.4; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Mes Artistes du Moment 🎧</h1>
+
+    <details class="artiste">
+        <summary>1. Fred again..</summary>
+        <p class="description">Le génie de l'électro émotionnelle. Ses morceaux capturent des moments de vie réels. Parfait pour coder ou conduire de nuit.</p>
+    </details>
+
+    <details class="artiste">
+        <summary>2. Bring Me The Horizon</summary>
+        <p class="description">Du métal qui a su évoluer vers quelque chose d'ultra moderne et expérimental. Énergie pure.</p>
+    </details>
+
+    <details class="artiste">
+        <summary>3. Three Days Grace</summary>
+        <p class="description">Le classique du rock alternatif. Idéal quand on a besoin d'un boost de motivation (ou d'un peu de nostalgie des années 2000).</p>
+    </details>
+
+    <details class="artiste">
+        <summary>4. Wham!</summary>
+        <p class="description">Parce que personne ne peut résister à George Michael. Un shot de bonne humeur instantané.</p>
+    </details>
+
+    <details class="artiste">
+        <summary>5. Morgan Wallen</summary>
+        <p class="description">La star de la country moderne. Des mélodies qui restent en tête toute la journée.</p>
+    </details>
+</div>
+
+</body>
+</html>
