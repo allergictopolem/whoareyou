@@ -4,50 +4,66 @@
     <meta charset="UTF-8">
     <title>Mon Top 5 Musique</title>
     <style>
-        body { font-family: sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; padding: 50px; }
-        .container { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 400px; }
-        h1 { text-align: center; color: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; margin: 0; }
+        .container { background: rgba(255, 255, 255, 0.95); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); width: 100%; max-width: 500px; }
+        h1 { text-align: center; color: #2d3436; margin-bottom: 30px; font-size: 2em; }
         
-        /* Style pour chaque artiste */
-        .artiste { margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .artiste { margin-bottom: 15px; background: #fff; border: 1px solid #e1e4e8; border-radius: 12px; overflow: hidden; transition: transform 0.2s; }
+        .artiste:hover { transform: scale(1.02); }
         
-        /* Le nom de l'artiste (cliquable) */
-        summary { font-weight: bold; cursor: pointer; color: #007bff; list-style: none; outline: none; }
-        summary:hover { color: #0056b3; }
-
-        /* La description qui se cache/s'affiche */
-        .description { margin-top: 10px; font-size: 0.9em; color: #555; line-height: 1.4; }
+        summary { padding: 15px; font-weight: bold; cursor: pointer; color: #4834d4; list-style: none; outline: none; display: flex; justify-content: space-between; align-items: center; }
+        summary::after { content: '▼'; font-size: 0.8em; color: #95a5a6; }
+        
+        .content { padding: 0 15px 15px 15px; text-align: center; }
+        .content img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .content p { margin: 0; color: #636e72; line-height: 1.5; font-size: 0.95em; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Mes Artistes du Moment 🎧</h1>
+    <h1>Mes Vibes du Moment 🎵</h1>
 
     <details class="artiste">
         <summary>1. Fred again..</summary>
-        <p class="description">Le génie de l'électro émotionnelle. Ses morceaux capturent des moments de vie réels. Parfait pour coder ou conduire de nuit.</p>
+        <div class="content">
+            <img src="https://m.media-amazon.com/images/I/71x9-YpT9+L._UF1000,1000_QL80_.jpg" alt="Fred again">
+            <p>Le génie de l'électro émotionnelle. Parfait pour coder ou conduire de nuit.</p>
+        </div>
     </details>
 
     <details class="artiste">
         <summary>2. Bring Me The Horizon</summary>
-        <p class="description">Du métal qui a su évoluer vers quelque chose d'ultra moderne et expérimental. Énergie pure.</p>
+        <div class="content">
+            <img src="https://www.nme.com/wp-content/uploads/2023/06/bring-me-the-horizon-download-2023.jpg" alt="BMTH">
+            <p>Du métal qui a su évoluer vers quelque chose d'ultra moderne. Énergie pure.</p>
+        </div>
     </details>
 
     <details class="artiste">
         <summary>3. Three Days Grace</summary>
-        <p class="description">Le classique du rock alternatif. Idéal quand on a besoin d'un boost de motivation (ou d'un peu de nostalgie des années 2000).</p>
+        <div class="content">
+            <img src="https://i.scdn.co/image/ab6761610000e5eb3889131649646b5a32b6e1cc" alt="Three Days Grace">
+            <p>Le classique du rock alternatif. Idéal pour un boost de motivation.</p>
+        </div>
     </details>
 
     <details class="artiste">
         <summary>4. Wham!</summary>
-        <p class="description">Parce que personne ne peut résister à George Michael. Un shot de bonne humeur instantané.</p>
+        <div class="content">
+            <img src="https://focus.nouvelobs.com/2023/06/28/125/0/1373/686/1200/630/60/0/99e2908_1687964175376-wham.jpg" alt="Wham">
+            <p>Un shot de bonne humeur instantané avec George Michael.</p>
+        </div>
     </details>
 
     <details class="artiste">
         <summary>5. Morgan Wallen</summary>
-        <p class="description">La star de la country moderne. Des mélodies qui restent en tête toute la journée.</p>
+        <div class="content">
+            <div style="background: #f1f2f6; padding: 40px; border-radius: 10px;">🤠 Image de Morgan Wallen</div>
+            <p>La star de la country moderne. Des mélodies qui restent en tête.</p>
+        </div>
     </details>
+
 </div>
 
 </body>
