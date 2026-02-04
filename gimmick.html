@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Top 5 personnages de MK8 all-time</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; margin: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #FF69B4 0%, #4B0082 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; margin: 0; }
         .container { background: rgba(255, 255, 255, 0.95); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); width: 100%; max-width: 500px; }
         h1 { text-align: center; color: #2d3436; margin-bottom: 30px; font-size: 2em; }
         
@@ -40,8 +40,14 @@
 }
         
         .content { padding: 0 15px 15px 15px; text-align: center; }
-        .content img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .content p { margin: 0; color: #636e72; line-height: 1.5; font-size: 0.95em; }
+        .content img {
+    width: 100%;        /* L'image prend toute la largeur disponible */
+    height: auto;       /* La hauteur s'adapte pour garder les proportions */
+    display: block;     /* Évite les petits espaces vides sous l'image */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: contain; /* S'assure que TOUTE l'image est visible sans être coupée */
+}        .content p { margin: 0; color: #636e72; line-height: 1.5; font-size: 0.95em; }
     </style>
 </head>
 <body>
