@@ -2,17 +2,42 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon Top 5 Musique</title>
+    <title>Top 5 personnages de MK8 all-time</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; margin: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; margin: 0; }
         .container { background: rgba(255, 255, 255, 0.95); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); width: 100%; max-width: 500px; }
         h1 { text-align: center; color: #2d3436; margin-bottom: 30px; font-size: 2em; }
         
-        .artiste { margin-bottom: 15px; background: #fff; border: 1px solid #e1e4e8; border-radius: 12px; overflow: hidden; transition: transform 0.2s; }
-        .artiste:hover { transform: scale(1.02); }
-        
+        .perso { margin-bottom: 15px; background: #fff; border: 1px solid #e1e4e8; border-radius: 12px; overflow: hidden; transition: transform 0.2s; }
+        .perso:hover { transform: scale(1.02); }
+
+
         summary { padding: 15px; font-weight: bold; cursor: pointer; color: #4834d4; list-style: none; outline: none; display: flex; justify-content: space-between; align-items: center; }
         summary::after { content: '▼'; font-size: 0.8em; color: #95a5a6; }
+        /* Style pour le sous-dépliant des Karts */
+    .kart-selection {
+    margin-top: 15px;
+    background: #fff0f5; /* Un rose très pâle pour contraster */
+    border-radius: 8px;
+    border: 1px dashed #ff69b4;
+}
+
+    .kart-selection summary {
+    padding: 10px;
+    font-size: 0.9em;
+    color: #d63384; /* Un rose plus foncé */
+}
+
+    .kart-info {
+    padding: 10px;
+    font-size: 0.85em;
+    text-align: left; /* Pour que la liste soit lisible */
+}
+
+    .kart-info ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
         
         .content { padding: 0 15px 15px 15px; text-align: center; }
         .content img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
@@ -22,48 +47,59 @@
 <body>
 
 <div class="container">
-    <h1>Mes Artistes du Moment 🎵</h1>
-    <h2>Vous ne pouvez pas toucher la musique, mais la musique peut vous toucher.</h2>
-    <details class="artiste">
-        <summary>1. Fred again..</summary>
+    <h1>Top 5 personnages MK8 🚗</h1>
+    <h3>Si t'es pas d'accord, t'as qu'à coder ton propre site.</h3>
+    <details class="perso">
+        <summary>5. Yoshi</summary>
         <div class="content">
-            <img src="fredagain.jpeg" alt="Fred again">
-            <p>Ça tape du pied et ça touche en plein coeur. Parfait pour le home trainer ou le deep focus.</p>
+            <img src="yoshi.jpg" alt="Yoshi">
+            <p>Il t'aidera à gagner des courses, mais franchement il est chiant à mourir - quelle que soit la couleur. Pas fait pour les gens qui aiment prendre des risques et vivre à  300%.</p>
         </div>
     </details>
 
-    <details class="artiste">
-        <summary>2. Bring Me The Horizon</summary>
+    <details class="perso">
+        <summary>4. Peach</summary>
         <div class="content">
-            <img src="bmth.jpeg" alt="BMTH">
-            <p>Ultra métal, ultra électro, ultra pop, ultra tout court.</p>
+            <img src="peach.jpg" alt="Peach">
+            <p>Comme Yoshi, mais pour les filles. Inclut Peachette et Peach Chat, parce qu'on n'a que 5 places.</p>
         </div>
     </details>
 
-    <details class="artiste">
-        <summary>3. Three Days Grace</summary>
+    <details class="perso">
+        <summary>3. Roy</summary>
         <div class="content">
-            <img src="threedaysgrace.jpg" alt="Three Days Grace">
-            <p>L'album Human dans les esgourdes à longueur de journée.</p>
+            <img src="Roy.jpeg" alt="Roy">
+            <p>Personnage ultra sous-côté. Regardez un peu ce swag. 
+                <br>
+                En revanche pour gagner des courses il est très irrégulier.</p>
         </div>
     </details>
 
-    <details class="artiste">
-        <summary>4. Wham!</summary>
+    <details class="perso">
+        <summary>2. Villageois</summary>
         <div class="content">
-            <img src="wham.jpeg" alt="Wham">
-            <p>Et pas que pour les musiques de Noël.</p>
+            <img src="villageois.jpg" alt="Villageois">
+            <p>Quand il est sur sa motocross, rien ni personne ne peut tester son style: avec son treillis et ses yeux défoncés, il revient directement d'un festoche un peu insalubre et déteste la police alors que ses parents sont avocats et vivent dans le 16e. 
+                <br> 
+                Mention spéciale à Villageoise, la version pour les filles.
+            </p>
         </div>
     </details>
 
-    <details class="artiste">
-        <summary>5. Morgan Wallen</summary>
+    <details class="perso">
+        <summary>1. Mystère...</summary>
         <div class="content">
-            <img src="morganwallen.jpeg" alt="Morgan Wallen">
-            <p>À l'écouter il est alcoolique et il blâme sa femme pour tous ses problèmes, mais qu'est-ce que c'est catchy.</p>
+            <img src="lakitu.png" alt="Lakitu">
+            <p><b></b>Lakitu, évidemment.</b>
+                <br> Tu savais déjà déjà que ça ne pouvait être que lui. Il est tout simplement indétrônable - Hall of Famer du classement du sourire depuis sa genèse, il essuie ses pieds sur la concurrence avec son grand sourire et son fairplay hors-normes. 
+                <br> Il supporte très mal l'injustice. Et il est également allergique à la victoire. Mais la victoire c'est pour les gens qui manquent de confiance. 
+                <br> Avec Lakitu, tu fais le choix d'une vie vécue pleinement, et le choix de la légende plutôt que la gloire.
+            </p>
         </div>
     </details>
 
+
+    
 </div>
 
 </body>
