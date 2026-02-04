@@ -78,10 +78,30 @@
     border-radius: 12px;
     object-fit: contain; /* S'assure que TOUTE l'image est visible sans être coupée */
 }        .content p { margin: 0; color: #636e72; line-height: 1.5; font-size: 0.95em; }
+
+        .top-left-btn {
+  position: fixed; /* Il reste en place même si on scroll */
+  top: 10px;       /* Distance du haut */
+  left: 10px;      /* Distance de la gauche */
+  z-index: 1000;   /* Pour être sûr qu'il passe devant le container */
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #e4000f; /* Rouge Mario ! */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+        
     </style>
 </head>
 <body>
+<button id="mario-btn" class="top-left-btn">Oki Doki!</button>
 
+<audio id="mario-sound" src="oki-doki-mario.mp3"></audio>
+
+    
 <div class="container">
     <h1>Top 5 personnages MK8 🚗</h1>
     <h3>Si t'es pas d'accord, t'as qu'à coder ton propre site.</h3>
@@ -223,5 +243,16 @@
     
 </div>
 
+
+    <script>
+  const btn = document.getElementById('mario-btn');
+  const audio = document.getElementById('mario-sound');
+
+  // 2. On écoute le clic
+  btn.addEventListener('click', () => {
+    audio.currentTime = 0; // On remet au début (si on clique vite plusieurs fois)
+    audio.play();          // On joue le son
+  });
+</script>
 </body>
 </html>
