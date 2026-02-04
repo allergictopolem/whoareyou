@@ -89,7 +89,7 @@
   background-color: #e4000f; /* Rouge Mario ! */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-weight: bold;
 }
 button {
@@ -126,15 +126,19 @@ button:active {
     transform: translateY(1px); /* S'enfonce légèrement */
 }
 
-        @keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(3deg); }
-    75% { transform: rotate(-3deg); }
-    100% { transform: rotate(0deg); }
+       @keyframes shakeAndLift {
+    0% { transform: translateY(-3px) rotate(0deg); }
+    25% { transform: translateY(-3px) rotate(3deg); }
+    75% { transform: translateY(-3px) rotate(-3deg); }
+    100% { transform: translateY(-3px) rotate(0deg); }
 }
 
-.artiste:hover button {
-    animation: shake 0.5s infinite;
+/* On applique l'animation quand on survole le bouton directement */
+button:hover {
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.5);
+    filter: brightness(1.1);
+    animation: shakeAndLift 0.3s infinite; /* Le bouton monte et tremble */
+}
 }
         
     </style>
