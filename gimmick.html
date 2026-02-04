@@ -92,7 +92,50 @@
   border-radius: 5px;
   font-weight: bold;
 }
+button {
+    /* Couleurs et Dégradé */
+    background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+    color: white;
+    
+    /* Forme et Bordure */
+    border: none;
+    border-radius: 50px; /* Bords très arrondis style pilule */
+    padding: 12px 25px;
+    
+    /* Texte et Ombre */
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+    
+    /* Animation fluide */
+    transition: all 0.3s ease;
+}
 
+/* Effet quand on passe la souris dessus */
+button:hover {
+    transform: translateY(-3px); /* Le bouton se soulève */
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.5);
+    filter: brightness(1.1); /* Devient un peu plus lumineux */
+}
+
+/* Effet quand on clique dessus */
+button:active {
+    transform: translateY(1px); /* S'enfonce légèrement */
+}
+
+        @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.artiste:hover button {
+    animation: shake 0.5s infinite;
+}
         
     </style>
 </head>
