@@ -38,23 +38,33 @@
     margin: 5px 0;
     padding-left: 20px;
 }
-         .kart-layout {
+    .kart-layout {
     display: flex;
-    align-items: center; /* Aligne verticalement au centre */
-    gap: 15px;           /* Espace entre l'image et le texte */
+    align-items: center; 
+    gap: 15px;           
     margin-bottom: 10px;
+    overflow: hidden; /* Empêche le contenu de déborder */
 }
 
-        .img-kart {
-    width: 100px;        /* Taille fixe pour l'icône du kart */
-    height: 100px;
-    object-fit: contain; /* L'image ne sera jamais écrasée */
-    background: #eee;    /* Gris clair en attendant ton image */
+    .img-kart {
+    width: 120px;        /* Fixe la largeur de l'image pour laisser de la place au texte */
+    min-width: 120px;    /* Empêche l'image de rétrécir si le texte est long */
+    height: auto;       
+    object-fit: contain; 
     border-radius: 8px;
 }
+     .img-kart:hover {
+    transform: scale(1.1) rotate(5deg);
+    transition: 0.3s;
+}   
+    .kart-text {
+    flex: 1;             /* Force le texte à occuper l'espace restant sans pousser */
+    font-size: 0.85em;   /* Un poil plus petit pour être sûr que ça rentre */
+}
 
-        .kart-text {
-    flex: 1;             /* Prend tout l'espace restant */
+    .kart-text ul {
+    padding-left: 15px;
+    margin: 5px 0;
 }
         
         .content { padding: 0 15px 15px 15px; text-align: center; }
